@@ -26,6 +26,7 @@
     "trianglify": "^2.0.0"
   },
   "devDependencies": {
+    "canvas": "^2.6.1",
     "prettier": "2.0.5"
   },
   "keywords": [

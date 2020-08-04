@@ -66,7 +66,7 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({data:{site,post}, pageContext})=>{
-   const { title, description, date, quote, tags } = post.frontmatter
+   const { title, description, date, tags } = post.frontmatter
 
     return (
         <Layout title={`${title} | ${site.siteMetadata.title}`}
@@ -187,11 +187,6 @@ export const pageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 title
                 description
-                quote{
-                    content
-                    author
-                    source
-                }
                 tags
             }
         }

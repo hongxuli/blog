@@ -115,13 +115,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-// exports.onCreateWebpackConfig = ({ stage, actions }) => {
-//   switch (stage) {
-//     case "build-html":
-//       actions.setWebpackConfig({
-//         // fix Trianglify
-//         externals: ["canvas"],
-//       })
-//       break
-//   }
-// }
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  switch (stage) {
+    case "build-html":
+      actions.setWebpackConfig({
+        // fix Trianglify
+        externals: ["canvas"],
+      })
+      break
+  }
+}

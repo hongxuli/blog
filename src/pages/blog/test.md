@@ -1,12 +1,12 @@
 ---
 layout: blog-post
-title: example
+title: test
 tags:
-  - example
+  - test
 date: 2020-08-02
-description: example
+description: test
 ---
 
-### head 
+### test 
 
-1234
+This article is for test
