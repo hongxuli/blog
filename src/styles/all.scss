@@ -249,6 +249,19 @@ $postify-color-link: $link;
   @extend .is-dark;
   position: relative;
   color: #212121;
+
+  &::before{
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  }
   
   .navbar-item {
     @media screen and (max-width: $mobile) {
